@@ -5,13 +5,13 @@ class List extends React.Component {
     super(props);
   }
   render() {
-    console.log("pokaz ile rekordow", this.props.data.length);
+    // console.log("pokaz ile rekordow", this.props.data.length);
     const { data, deleteHandler, disabled } = this.props;
-    console.log("button", disabled);
+    // console.log("button", disabled);
     const items = data.map((elem, index) => {
       return (
         <tbody key={index}>
-          <tr className="table-active">
+          <tr className="table-active ">
             <td>{elem.id}</td>
             <td>{elem.nazwisko}</td>
             <td>{elem.opis}</td>

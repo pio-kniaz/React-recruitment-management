@@ -5,7 +5,6 @@ class Item extends React.Component {
     super(props);
   }
   render() {
-    console.log(this.props.data);
     return (
       <div className="container item-wrapper">
         <table className="table table-hover">
@@ -22,7 +21,7 @@ class Item extends React.Component {
               <th scope="col">Dzial</th>
               <th scope="col">Projekt</th>
               <th scope="col">Rok</th>
-              <th scope="col">🙉🙊🙈</th>
+              <th scope="col"></th>
             </tr>
           </thead>
           {this.props.data}

@@ -13,7 +13,7 @@ class Builder extends React.Component {
   }
 
   componentDidMount() {
-    axios.get("http://test.sknkonsultinguit.pl/welcome").then(response => {
+    axios.get("http://sknkonsultinguit.pl/welcome").then(response => {
       if (response.data.team.length <= 2) {
         this.setState({
           list: response.data.team,
@@ -33,7 +33,7 @@ class Builder extends React.Component {
     console.log(this.state.list.length);
     axios
       .delete(
-        "http://test.sknkonsultinguit.pl/index.php/Pages/delete/" +
+        "http://sknkonsultinguit.pl/index.php/Pages/delete/" +
           selectedItemToDel.id
       )
       .then(response => {
