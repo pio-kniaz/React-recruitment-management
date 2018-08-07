@@ -1,8 +1,9 @@
 body {
-  background-image: url("https://cdn.pixabay.com/photo/2017/03/31/17/44/avatar-2191934_960_720.png");
+  background-image: url(https://picsum.photos/1000/1000/?random
+);
   background-position: center center;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 }
 .App {
   text-align: center;
